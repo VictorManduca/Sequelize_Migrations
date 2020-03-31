@@ -35,7 +35,7 @@ function show(req, res) {
     .Vendedor
     .findOne({
       where: {
-        ID: id
+        id
       }
     })
     .then(seller => res.status(200).json(seller))
